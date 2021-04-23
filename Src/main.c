@@ -8,15 +8,11 @@
 //	Threshold Functions
 //	MHZ14A Functions
 
-
-
-
-void mode(){
-	
+void mode()
+{
 	/* You may either implement in the mode() or simply implemnt in main() while loop */
 	
 }
-/* USER CODE END 0 */
 
 
 int main(void)
@@ -31,7 +27,7 @@ int main(void)
 
   while (1)
   {
-		mode();
+	mode();
   }
+	
 }
-
