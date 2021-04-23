@@ -89,7 +89,7 @@ uint8_t DHT11_Read_Bit(void)
 
 uint8_t DHT11_Read_Byte(void)    
 {        
-  uint8_t data = 0;
+  	uint8_t data = 0;
 	for (int i = 0; i < 8; i++) 
 	{
 		data = data << 1; 
