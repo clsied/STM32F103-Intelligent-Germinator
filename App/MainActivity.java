@@ -33,23 +33,19 @@ public class MainActivity extends AppCompatActivity {
     // GUI Components
     private TextView mBluetoothStatus;
     private TextView mReadBuffer;
-    private Button mTemp;
-    private Button msoil;
-    private Button mHumid;
-    private Button mCO2;
-    private Button mlumin;
-    private Button mventon;
-    private Button mventoff;
-    private Button mlighton;
-    private Button mlightoff;
-    private Button mpumpon;
-    private Button mpumpoff;
-    private Button msetmode;
-
+    
+    
+    /**************************************/
+    // Put All Your Needed Button Inside
+    
+    
+    /**************************************/
+    
     private Button mScanBtn;
     private Button mOffBtn;
     private Button mListPairedDevicesBtn;
     private Button mDiscoverBtn;
+    
     private BluetoothAdapter mBTAdapter;
     private Set<BluetoothDevice> mPairedDevices;
     private ArrayAdapter<String> mBTArrayAdapter;
@@ -76,18 +72,12 @@ public class MainActivity extends AppCompatActivity {
         mBluetoothStatus = (TextView)findViewById(R.id.bluetoothStatus);
         mReadBuffer = (TextView) findViewById(R.id.readBuffer);
 
-        mTemp = (Button)findViewById(R.id.button1);
-        msoil = (Button)findViewById(R.id.button2);
-        mHumid = (Button)findViewById(R.id.button3);
-        mCO2 = (Button)findViewById(R.id.button4);
-        mlumin = (Button)findViewById(R.id.button5);
-        mventon = (Button)findViewById(R.id.button6);
-        mventoff = (Button)findViewById(R.id.button7);
-        mlighton = (Button)findViewById(R.id.button8);
-        mlightoff = (Button)findViewById(R.id.button9);
-        mpumpon = (Button)findViewById(R.id.button10);
-        mpumpoff = (Button)findViewById(R.id.button11);
-        msetmode = (Button)findViewById((R.id.btn));
+        /**************************************/
+        // Override All Your Needed Button Inside
+        
+        
+        /**************************************/
+        
         mScanBtn = (Button)findViewById(R.id.scan);
         mOffBtn = (Button)findViewById(R.id.off);
         mDiscoverBtn = (Button)findViewById(R.id.discover);
@@ -127,101 +117,14 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Bluetooth device not found!",Toast.LENGTH_SHORT).show();
         }
         else {
-
-//            mLED1.setOnClickListener(new View.OnClickListener(){
-//                @Override
-//                public void onClick(View v){
-//                    if(mConnectedThread != null) //First check to make sure thread created
-//                        mConnectedThread.write("1");
-//                }
-//            });
-            mTemp.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write("a");
-                }
-
-            });
-            msoil.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write("b");
-                }
-            });
-            mHumid.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write("c");
-                }
-            });
-            mCO2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write("d");
-                }
-            });
-            mlumin.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write("e");
-                }
-            });
-            mventon.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write("f");
-                }
-            });
-            mventoff.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write("g");
-                }
-            });
-            mlighton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write("h");
-                }
-            });
-            mlightoff.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write(("i"));
-                }
-            });
-            mpumpon.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write("j");
-                }
-            });
-            mpumpoff.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write("k");
-                }
-            });
-
-            msetmode.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(mConnectedThread!=null)
-                        mConnectedThread.write(("l"));
-                }
-            });
-
+            
+            /**************************************/
+            // Put All Your Needed OnclickListener Here
+            
+            
+            
+            /**************************************/
+            
             mScanBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
