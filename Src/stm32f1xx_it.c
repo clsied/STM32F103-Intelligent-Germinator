@@ -2,7 +2,6 @@
 extern uint8_t hc05_data[1];
 extern uint8_t hc05_data_last[1];
 
-
 /**
   * @brief This function handles USART1 global interrupt.
   */
@@ -16,5 +15,3 @@ void USART1_IRQHandler(void)
 	HAL_UART_Receive_IT(&huart1,hc05_data,1);
   /* USER CODE END USART1_IRQn 1 */
 }
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
